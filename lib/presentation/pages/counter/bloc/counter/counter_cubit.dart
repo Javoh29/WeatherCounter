@@ -13,6 +13,10 @@ class CounterCubit extends Cubit<CounterState> {
       emit(
         CounterState(count: resuld),
       );
+    } else {
+      emit(
+        const CounterState(count: 10),
+      );
     }
   }
 
@@ -22,6 +26,10 @@ class CounterCubit extends Cubit<CounterState> {
     if (resuld >= 0) {
       emit(
         CounterState(count: resuld),
+      );
+    } else {
+      emit(
+        const CounterState(count: 0),
       );
     }
   }
